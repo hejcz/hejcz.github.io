@@ -504,7 +504,7 @@ pre,
 }
 pre,
 code {
-  font-family: "Ubuntu Mono", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "MonacoRegular", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 code {
   overflow-wrap: break-word;
@@ -1765,7 +1765,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5045ff;
+  background: #ff93f2;
 }
 .feed-link,
 .chat {
@@ -2473,4 +2473,14 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+@font-face {
+  font-family: 'MonacoRegular';
+  src: url("/lib/monaco/monaco-webfont.eot");
+  src: url("/lib/monaco/monaco-webfont.eot?#iefix") format('embedded-opentype'), url("/lib/monaco/monaco-webfont.woff") format('woff'), url("/lib/monaco/monaco-webfont.ttf") format('truetype'), url("/lib/monaco/monaco-webfont.svg#MonacoRegular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.crayon-font-monaco * {
+  font-family: Monaco, 'MonacoRegular', 'Courier New', monospace !important;
 }

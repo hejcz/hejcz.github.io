@@ -9,12 +9,12 @@
     <copyright>Copyright © 2020, Julian Rubin.</copyright>
     <lastBuildDate>Mon, 28 Dec 2020 09:52:30 +0100</lastBuildDate><atom:link href="https://hejcz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://hejcz.github.io/my-first-post/</link>
+      <title>Cron popup</title>
+      <link>https://hejcz.github.io/cron-popup/</link>
       <pubDate>Mon, 28 Dec 2020 09:52:30 +0100</pubDate>
       
-      <guid>https://hejcz.github.io/my-first-post/</guid>
-      <description>Test polskich znaków grzegrżączkaśąę</description>
+      <guid>https://hejcz.github.io/cron-popup/</guid>
+      <description>15 * * * * XDG_RUNTIME_DIR=/run/user/$(id -u) notify-send &amp;#39;Water&amp;#39; &amp;#39;Remember to drink!&amp;#39; --icon=dialog-information </description>
     </item>
     
   </channel>

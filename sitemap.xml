@@ -3,18 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hejcz.github.io/blog/</loc>
-    <lastmod>2020-12-28T09:52:30+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hejcz.github.io/cron-popup/</loc>
-    <lastmod>2020-12-28T09:52:30+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hejcz.github.io/</loc>
-    <lastmod>2020-12-28T09:52:30+01:00</lastmod>
+    <lastmod>2021-03-12T16:48:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hejcz.github.io/blog/</loc>
+    <lastmod>2021-03-12T16:48:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hejcz.github.io/fauxveride/</loc>
+    <lastmod>2021-03-12T16:48:30+01:00</lastmod>
   </url>
   
 </urlset>

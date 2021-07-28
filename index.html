@@ -69,7 +69,7 @@
     When kill -3 &lt;pid&gt; and jconsole &lt;pid&gt; don&rsquo;t work as vm froze it is still possible to get some info about the process.
 gdb -p &lt;pid&gt; (gdb) generate-core-file Saved corefile core.&lt;pid&gt; (gdb) quit To extract the stacktrace:
 jhsdb jstack \ --exe /home/jrubin/.sdkman/candidates/java/current/bin/java \ --core core.&lt;pid&gt; To extract the heap dump:
-jhsdb jmap --binaryheap \ --dumpfile dump.hprof \ --exe /home/jrubin/.sdkman/candidates/java/current/bin/java \ --core core.&lt;pid&gt; Note that jhsbd jmap took couple of minutes to run.
+jhsdb jmap --binaryheap \ --dumpfile dump.hprof \ --exe /home/jrubin/.sdkman/candidates/java/current/bin/java \ --core core.&lt;pid&gt; Notice that jhsbd jmap took couple of minutes to run.
   </div>
   
   <a href="https://hejcz.github.io/posts/my-first-post/" class="c-article__btn p-list-article__btn">Read more</a>

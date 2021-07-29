@@ -6,7 +6,19 @@
     <description>Recent content on Julian Rubin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Jul 2021 07:35:48 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jul 2021 13:23:27 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: How to kill hanging postgres transaction</title>
+      <link>https://hejcz.github.io/posts/killing_hanging_process_on_pg/</link>
+      <pubDate>Thu, 29 Jul 2021 13:23:27 +0200</pubDate>
+      
+      <guid>https://hejcz.github.io/posts/killing_hanging_process_on_pg/</guid>
+      <description>postgres.log
+LOG: process 786667 still waiting for AccessShareLock \ on relation 16632 of database 16384 after 7064693.878 ms ... DETAIL: Process holding the lock: 787040. pg_Stat_activity contains some info about problematic process like query or ip.
+db=# select query from pg_Stat_activity where pid = 787040; For locks details there is:
+SELECT blocked_locks.pid AS blocked_pid, blocked_activity.usename AS blocked_user, blocking_locks.pid AS blocking_pid, blocking_activity.usename AS blocking_user, blocked_activity.query AS blocked_statement, blocking_activity.query AS current_statement_in_blocking_process FROM pg_catalog.</description>
+    </item>
+    
     <item>
       <title>TIL: Debugging frozen JVM</title>
       <link>https://hejcz.github.io/posts/my-first-post/</link>

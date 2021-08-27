@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Julian Rubin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Aug 2021 21:19:00 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 07:02:00 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: org.reflections vs ClassGraph</title>
+      <link>https://hejcz.github.io/posts/org_reflections_vs_classgraph/</link>
+      <pubDate>Fri, 27 Aug 2021 07:02:00 +0200</pubDate>
+      
+      <guid>https://hejcz.github.io/posts/org_reflections_vs_classgraph/</guid>
+      <description>Many applications perform some kind of a classpath scan. Think of spring finding all classes annotated with @RestController or implementing specific interface.
+In work we use patched org.reflections in version 9.11. Upgrade to 9.12 failed due to a bug so we considered changing reflection library. The only reasonable candidate was ClassGraph.
+Both libraries work in similar maneer:
+ Determine jars and directories on classpath. Iterate over their content. If specific class or resource matches user-defined rules add them to result set.</description>
+    </item>
+    
     <item>
       <title>TIL: Debugging maven surefire test in IDE</title>
       <link>https://hejcz.github.io/posts/debug_maven_surefire/</link>

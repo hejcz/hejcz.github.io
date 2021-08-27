@@ -56,6 +56,31 @@
   
   <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://hejcz.github.io/posts/org_reflections_vs_classgraph/">TIL: org.reflections vs ClassGraph</a></h2>
+    <p class="c-article__meta">
+      Posted on
+<time datetime="2021-08-27T07:02:00&#43;02:00">
+  Aug 27, 2021
+</time>
+
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Many applications perform some kind of a classpath scan. Think of spring finding all classes annotated with @RestController or implementing specific interface.
+In work we use patched org.reflections in version 9.11. Upgrade to 9.12 failed due to a bug so we considered changing reflection library. The only reasonable candidate was ClassGraph.
+Both libraries work in similar maneer:
+ Determine jars and directories on classpath. Iterate over their content. If specific class or resource matches user-defined rules add them to result set.
+  </div>
+  
+  <a href="https://hejcz.github.io/posts/org_reflections_vs_classgraph/" class="c-article__btn p-list-article__btn">Read more</a>
+  
+</article>
+
+
+  
+    
+  <article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://hejcz.github.io/posts/debug_maven_surefire/">TIL: Debugging maven surefire test in IDE</a></h2>
     <p class="c-article__meta">
       Posted on

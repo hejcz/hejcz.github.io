@@ -56,6 +56,27 @@
   
   <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://hejcz.github.io/posts/debug_maven_surefire/">TIL: Debugging maven surefire test in IDE</a></h2>
+    <p class="c-article__meta">
+      Posted on
+<time datetime="2021-08-26T21:19:00&#43;02:00">
+  Aug 26, 2021
+</time>
+
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Following command makes surefire wait with test execution until you connect on port 8000.
+mvn -Dtest=SomeTest \ -Dmaven.surefire.debug=&quot;-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -Xnoagent -Djava.compiler=NONE&quot; \ test -pl :some-module 
+  </div>
+  
+</article>
+
+
+  
+    
+  <article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://hejcz.github.io/posts/killing_hanging_process_on_pg/">TIL: How to kill hanging postgres transaction</a></h2>
     <p class="c-article__meta">
       Posted on

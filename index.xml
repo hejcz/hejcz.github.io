@@ -6,7 +6,17 @@
     <description>Recent content on Julian Rubin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jul 2021 13:23:27 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 21:19:00 +0200</lastBuildDate><atom:link href="https://hejcz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Debugging maven surefire test in IDE</title>
+      <link>https://hejcz.github.io/posts/debug_maven_surefire/</link>
+      <pubDate>Thu, 26 Aug 2021 21:19:00 +0200</pubDate>
+      
+      <guid>https://hejcz.github.io/posts/debug_maven_surefire/</guid>
+      <description>Following command makes surefire wait with test execution until you connect on port 8000.
+mvn -Dtest=SomeTest \ -Dmaven.surefire.debug=&amp;quot;-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -Xnoagent -Djava.compiler=NONE&amp;quot; \ test -pl :some-module </description>
+    </item>
+    
     <item>
       <title>TIL: How to kill hanging postgres transaction</title>
       <link>https://hejcz.github.io/posts/killing_hanging_process_on_pg/</link>

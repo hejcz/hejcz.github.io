@@ -25,7 +25,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.1" />
   
   
 
@@ -71,16 +71,16 @@
   <section id="js-article" class="p-article__body">
     <p>When <code>kill -3 &lt;pid&gt;</code> and <code>jconsole &lt;pid&gt;</code> don&rsquo;t work as vm froze it is still possible
 to get some info about the process.</p>
-<pre><code>gdb -p &lt;pid&gt;
+<pre tabindex="0"><code>gdb -p &lt;pid&gt;
 (gdb) generate-core-file
 Saved corefile core.&lt;pid&gt;
 (gdb) quit
 </code></pre><p>To extract the stacktrace:</p>
-<pre><code>jhsdb jstack \
+<pre tabindex="0"><code>jhsdb jstack \
 --exe /home/jrubin/.sdkman/candidates/java/current/bin/java \
 --core core.&lt;pid&gt;
 </code></pre><p>To extract the heap dump:</p>
-<pre><code>jhsdb jmap --binaryheap \
+<pre tabindex="0"><code>jhsdb jmap --binaryheap \
 --dumpfile dump.hprof \
 --exe /home/jrubin/.sdkman/candidates/java/current/bin/java \
 --core core.&lt;pid&gt;

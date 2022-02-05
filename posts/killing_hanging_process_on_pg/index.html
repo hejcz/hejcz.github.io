@@ -25,7 +25,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.92.1" />
   
   
 
@@ -70,15 +70,15 @@
   
   <section id="js-article" class="p-article__body">
     <p>postgres.log</p>
-<pre><code>LOG: process 786667 still waiting for AccessShareLock \
+<pre tabindex="0"><code>LOG: process 786667 still waiting for AccessShareLock \
 on relation 16632 of database 16384 after 7064693.878 ms
 ...
 DETAIL: Process holding the lock: 787040.
 </code></pre><p><code>pg_Stat_activity</code> contains some info about problematic process
 like query or ip.</p>
-<pre><code>db=# select query from pg_Stat_activity where pid = 787040;
+<pre tabindex="0"><code>db=# select query from pg_Stat_activity where pid = 787040;
 </code></pre><p>For locks details there is:</p>
-<pre><code>SELECT blocked_locks.pid     AS blocked_pid,
+<pre tabindex="0"><code>SELECT blocked_locks.pid     AS blocked_pid,
          blocked_activity.usename  AS blocked_user,
          blocking_locks.pid     AS blocking_pid,
          blocking_activity.usename AS blocking_user,
@@ -100,7 +100,7 @@ like query or ip.</p>
         AND blocking_locks.pid != blocked_locks.pid    JOIN pg_catalog.pg_stat_activity blocking_activity ON blocking_activity.pid = blocking_locks.pid
    WHERE NOT blocked_locks.granted;
 </code></pre><p>Once you gather the data you need, you can kill the process with:</p>
-<pre><code>SELECT pg_terminate_backend(pid); -- for me pid would be 787040.
+<pre tabindex="0"><code>SELECT pg_terminate_backend(pid); -- for me pid would be 787040.
 </code></pre><p>or simple <code>kill &lt;pid&gt;</code>.</p>
 
   </section>
